@@ -1,8 +1,10 @@
 # Inherit common mobile Lineage stuff
 $(call inherit-product, vendor/lineage/config/common.mk)
 
+ifneq ($(BUILD_VANILLA), true)
 # Include AOSP audio files
 include vendor/lineage/config/aosp_audio.mk
+endif
 
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
