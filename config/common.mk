@@ -160,6 +160,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     bash \
