@@ -99,6 +99,18 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Include font files
 include vendor/lineage/config/fonts.mk
 
+# Include Pixel audio files
+include vendor/lineage/config/PixelAudio.mk
+
+# Default notification/alarm sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.notification_sound=Eureka.ogg \
+    ro.config.alarm_alert=Fresh_start.ogg
+
+# Default ringtone
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Your_new_adventure.ogg
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
