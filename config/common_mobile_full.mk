@@ -36,11 +36,13 @@ PRODUCT_PACKAGES += \
     zstd
 
 # Fonts
+ifeq ($(LINEAGE_BUILD),true)
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
     FontGoogleSansFlexOverlay \
     FontLatoOverlay \
     FontRubikOverlay
+endif
 
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
